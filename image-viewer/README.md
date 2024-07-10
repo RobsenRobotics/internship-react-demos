@@ -15,6 +15,11 @@
 
 > 2.3.1. Single Info Component
 
+## Components
+> ImageContext
+> TargetBoxContext
+> ChosenTargetBoxContext
+
 
 * #####  Add Butonu ile görsel üzerinde target alanı oluşacak.  [TAMAMLANDI]
 

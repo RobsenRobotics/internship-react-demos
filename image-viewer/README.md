@@ -34,3 +34,7 @@
 * #####  Target alanının köşeleri üzerinden target alanı view üzerinde taşınabilecek.
 
 * #####  Hangi Target alanı seçildi ise View altında o target alanının özellikleri yazacak. [TAMAMLANDI]
+
+![image](https://github.com/RobsenRobotics/internship-react-demos/assets/72024578/8c07b16e-0d20-4f7f-bc40-59e8d4d9a4e9)
+
+

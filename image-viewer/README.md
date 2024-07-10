@@ -17,7 +17,9 @@
 
 ## Components
 > ImageContext
+
 > TargetBoxContext
+
 > ChosenTargetBoxContext
 
 

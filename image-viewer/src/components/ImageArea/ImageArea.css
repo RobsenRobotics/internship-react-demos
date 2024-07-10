@@ -1,0 +1,10 @@
+.image-area {
+  position: relative;
+  width: 100%; /* Resim alanının genişliği */
+  height: 100%; /* Resim alanının yüksekliği */
+}
+
+.image-area-img {
+  width: 100%; /* Resmin genişliği */
+  height: auto; /* Resmin yüksekliği otomatik */
+}

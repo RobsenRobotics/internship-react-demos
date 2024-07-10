@@ -1,0 +1,27 @@
+import React, { useContext } from 'react';
+import './AddButton.css';
+import { TargetBoxContext } from '../../contexts/TargetBoxContext';
+import { ImageContext } from '../../contexts/ImageContext';
+
+const AddButton = () => {
+  const { width, height } = useContext(ImageContext);
+  const { addTargetBox } = useContext(TargetBoxContext);
+
+  const handleClick = () => {
+    const id = Date.now(); // Geçici bir ID oluşturabilirsiniz
+    const x = Math.random() * (width - 50); // X koordinatı, resim alanı içinde rastgele
+    const y = Math.random() * (height - 50); // Y koordinatı, resim alanı içinde rastgele
+    const boxWidth = 50; // Kutu genişliği
+    const boxHeight = 50; // Kutu yüksekliği
+
+    addTargetBox(id, x, y, boxWidth, boxHeight);
+  };
+
+  return (
+    <button className="add-button" onClick={handleClick}>
+      Add
+    </button>
+  );
+};
+
+export default AddButton;

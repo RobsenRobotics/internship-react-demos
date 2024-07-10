@@ -1,0 +1,40 @@
+/* src/components/ImageViewerArea.css */
+
+.image-viewer-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Dikeyde ortala */
+  align-items: center; /* Yatayda ortala */
+  background-color: #aea6a6;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.image-viewer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Dikeyde ortala */
+  align-items: center; /* Yatayda ortala */
+  margin-top: 20px;
+  flex: 1; /* İçeriği alanın tamamını kapla */
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+.viewer-section {
+  width: 100%; /* İçerikleri genişliklerine göre ayarla */
+  max-width: 1200px; /* Maksimum genişlik belirleme */
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center; /* İçerikleri yatayda ortala */
+}
+
+.image-section {
+  width: 100%;
+  max-width: 100%; /* İmageArea bileşeninin maksimum genişliği */
+  height: auto; /* Otomatik yükseklik ayarı */
+}

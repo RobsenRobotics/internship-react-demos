@@ -1,0 +1,12 @@
+/* src/components/TopBar.css */
+
+.top-bar {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    position: relative;
+    top: 20;
+    width: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  

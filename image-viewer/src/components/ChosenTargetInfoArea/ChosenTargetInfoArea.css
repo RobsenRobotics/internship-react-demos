@@ -1,0 +1,15 @@
+/* ChosenTargetInfoArea.css dosyası */
+.chosen-target-info-area {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #f0f0f0;
+  }
+  
+  .info-row {
+    display: flex;
+    flex-wrap: wrap; /* Eğer sığmazsa alt satıra geçsin */
+  }
+  
+  /* SingleInfo bileşenlerine ait stiller buraya eklenebilir */
+  

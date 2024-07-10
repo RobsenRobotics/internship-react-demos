@@ -15,7 +15,7 @@
 
 > 2.3.1. Single Info Component
 
-## Components
+## Contexts
 > ImageContext
 
 > TargetBoxContext

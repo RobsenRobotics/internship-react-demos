@@ -28,15 +28,20 @@
 
 * #####  Add Butonu ile görsel üzerinde target alanı oluşacak.  [TAMAMLANDI]
 
-* #####  Fare tekerleği ile zoom in-out yapılacak.
+* #####  Fare tekerleği ile zoom in-out yapılacak. [TAMAMLANDI]
 
-* #####  Left Click ile zoom-in yapılmış görsel üzerinde gezinilecek.
+* #####  Left Click ile zoom-in yapılmış görsel üzerinde gezinilecek. [TAMAMLANDI]
 
-* #####  Target alanının köşeleri üzerinden target alanı büyütülebilecek.
+* #####  Target alanının köşeleri üzerinden target alanı büyütülebilecek. [TAMAMLANDI]
 
-* #####  Target alanının köşeleri üzerinden target alanı view üzerinde taşınabilecek.
+* #####  Target alanının köşeleri üzerinden target alanı view üzerinde taşınabilecek. [TAMAMLANDI]
 
 * #####  Hangi Target alanı seçildi ise View altında o target alanının özellikleri yazacak. [TAMAMLANDI]
+
+## Issues
+> TargetBox değerleri değiştirilse bile oluşturulduğu andaki değerlere sahip, güncellenmiyor.
+> TargetBox bileşeni ImageArea alanı üzerinde taşınırken ImageArea da birlikte hareket etmiyor.
+
 
 ![image](https://github.com/RobsenRobotics/internship-react-demos/assets/72024578/8c07b16e-0d20-4f7f-bc40-59e8d4d9a4e9)
 

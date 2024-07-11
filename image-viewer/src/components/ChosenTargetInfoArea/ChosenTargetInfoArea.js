@@ -9,6 +9,9 @@ const ChosenTargetInfoArea = () => {
   const { targetBoxes } = useContext(TargetBoxContext); // TargetBoxContext'ten targetBoxes'ı al
   const [boxInfo, setBoxInfo] = useState(null); // Seçilen kutunun bilgilerini tutacak state
 
+  // ! farklı bir taneye tıklanınca useeffect çalışıyor
+
+
   // Seçilen kutunun bilgilerini güncelle
   useEffect(() => {
     if (selectedBox) {

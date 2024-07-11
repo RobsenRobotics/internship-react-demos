@@ -1,10 +1,10 @@
 .image-area {
   position: relative;
-  width: 100%; /* Resim alanının genişliği */
-  height: 100%; /* Resim alanının yüksekliği */
+  overflow: hidden;
+  border: 1px solid #ccc; /* Opsiyonel: Konteyneri görselleştir */
 }
 
 .image-area-img {
-  width: 100%; /* Resmin genişliği */
-  height: auto; /* Resmin yüksekliği otomatik */
+  display: block;
+  transition: transform 0.2s ease;
 }

@@ -6,21 +6,13 @@ import './App.css';
 
 function App() {
   return (
-
     <ImageProvider>
-
       <div className="App">
         <Sidebar />
-
         <ImageViewerArea />
-
       </div>
     </ImageProvider>
-
-
   );
 }
-
-
 
 export default App;

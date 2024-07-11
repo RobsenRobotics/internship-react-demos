@@ -8,6 +8,8 @@ import { TargetBoxProvider } from '../../contexts/TargetBoxContext';
 import { ChosenTargetBoxProvider } from '../../contexts/ChosenTargetBoxContext';
 import './ImageViewerArea.css';
 
+
+
 const ImageViewerArea = () => {
   // ImageContext'ten width, height ve updateDimensions fonksiyonunu useContext ile al
   const { width, height, updateDimensions } = useContext(ImageContext);
@@ -35,7 +37,9 @@ const ImageViewerArea = () => {
           <TopBar />
           <div className="image-viewer-content">
             <div className="viewer-section">
-              <ImageArea src={imageUrl} alt={imageAlt} />
+            {/* <ImageArea src={imageUrl} /> */}
+            <ImageArea src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg" />
+
             </div>
           </div>
           <ChosenTargetInfoArea

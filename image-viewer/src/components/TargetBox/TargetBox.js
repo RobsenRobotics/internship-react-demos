@@ -2,7 +2,7 @@ import React from 'react';
 import { Rnd } from 'react-rnd';
 import './TargetBox.css';
 
-const ResizableCard = ({ id, x, y, width, height, onClick }) => {
+const TargetBox = ({ id, x, y, width, height, onClick }) => {
   const boxStyle = {
     left: `${x}%`,
     top: `${y}%`,
@@ -42,4 +42,4 @@ const ResizableCard = ({ id, x, y, width, height, onClick }) => {
   );
 };
 
-export default ResizableCard;
+export default TargetBox;

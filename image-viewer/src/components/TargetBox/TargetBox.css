@@ -6,3 +6,35 @@
   border: 2px solid red; /* Kenarları kırmızı renkte */
   box-sizing: border-box; /* Kenarları kutu boyutuna dahil et */
 }
+
+.rnd-resize-handle {
+  width: 10px;
+  height: 10px;
+  background-color: blue;
+  position: absolute;
+  z-index: 1;
+}
+
+.rnd-resize-handle-topLeft {
+  top: -5px;
+  left: -5px;
+  cursor: nwse-resize;
+}
+
+.rnd-resize-handle-topRight {
+  top: -5px;
+  right: -5px;
+  cursor: nesw-resize;
+}
+
+.rnd-resize-handle-bottomLeft {
+  bottom: -5px;
+  left: -5px;
+  cursor: nesw-resize;
+}
+
+.rnd-resize-handle-bottomRight {
+  bottom: -5px;
+  right: -5px;
+  cursor: nwse-resize;
+}

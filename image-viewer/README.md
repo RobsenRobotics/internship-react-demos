@@ -22,6 +22,9 @@
 
 > ChosenTargetBoxContext
 
+## Dependencies
+> react-rnd: "^10.4.11"
+
 
 * #####  Add Butonu ile görsel üzerinde target alanı oluşacak.  [TAMAMLANDI]
 

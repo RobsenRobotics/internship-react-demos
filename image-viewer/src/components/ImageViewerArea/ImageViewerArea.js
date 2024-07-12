@@ -3,7 +3,7 @@ import React, { useContext, useEffect } from 'react';
 import TopBar from '../TopBar/TopBar';
 import ImageArea from '../ImageArea/ImageArea';
 import ChosenTargetInfoArea from '../ChosenTargetInfoArea/ChosenTargetInfoArea';
-import { ImageContext } from '../../contexts/ImageContext'; // Proje yapılandırmanıza göre yolunu güncelleyin
+import { ImageContext } from '../../contexts/ImageContext';
 import { TargetBoxProvider } from '../../contexts/TargetBoxContext';
 import { ChosenTargetBoxProvider } from '../../contexts/ChosenTargetBoxContext';
 import './ImageViewerArea.css';
@@ -11,19 +11,15 @@ import './ImageViewerArea.css';
 
 
 const ImageViewerArea = () => {
-  // ImageContext'ten width, height ve updateDimensions fonksiyonunu useContext ile al
   const { width, height, updateDimensions } = useContext(ImageContext);
 
-  const imageUrl = 'https://i.pinimg.com/originals/bf/ae/3f/bfae3fa83ae7efd6b7b56c3df0fac9bf.jpg'; // Örnek resim URL'si
-  const imageAlt = 'Placeholder Image';
   const index = 1;
   const center = '(400, 200)';
   const containerWidth = '800px';
   const containerHeight = '400px';
 
-  // Genişlik ve yükseklik değerlerini güncellemek için useEffect kullan
   useEffect(() => {
-    updateDimensions(1200, 600); // Örnek olarak genişlik: 1200px, yükseklik: 600px
+    updateDimensions(1200, 600); 
   }, [updateDimensions]);
 
   console.log("ImageViewerArea width : " + width);

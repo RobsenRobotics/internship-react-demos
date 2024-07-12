@@ -17,13 +17,22 @@ export const TargetBoxProvider = ({ children }) => {
     setSelectedBoxId(id);
   };
 
+  const updateTargetBoxes = (id, newWidth, newHeight, newCenterX, newCenterY) => {
+    setTargetBoxes((prevBoxes) =>
+      prevBoxes.map((box) =>
+        box.id === id ? { ...box, width: newWidth, height: newHeight, x: newCenterX, y: newCenterY } : box
+      )
+    );
+  };
+
   useEffect(() => {
     console.log("Target Boxes: ", targetBoxes);
   }, [targetBoxes]);
 
   return (
-    <TargetBoxContext.Provider value={{ addTargetBox, targetBoxes, updateSelectedBox }}>
+    <TargetBoxContext.Provider value={{ addTargetBox, targetBoxes, updateSelectedBox, updateTargetBoxes }}>
       {children}
     </TargetBoxContext.Provider>
   );
 };
+

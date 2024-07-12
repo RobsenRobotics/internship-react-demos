@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Rnd } from 'react-rnd';
 import './TargetBox.css';
+import { TargetBoxContext } from '../../contexts/TargetBoxContext';
 
 const TargetBox = ({ id, x, y, width, height, onClick }) => {
+
+  const { updateTargetBoxes } = useContext(TargetBoxContext); // TargetBoxContext'ten updateTargetBoxes'ı al
+
   const boxStyle = {
     left: `${x}%`,
     top: `${y}%`,
@@ -10,10 +14,21 @@ const TargetBox = ({ id, x, y, width, height, onClick }) => {
     position: 'absolute'
   };
 
-  const handleClick = () => {
+  const handleClick = e => {
+    e.preventDefault();
     onClick(id);
     console.log("id : " + id);
   };
+
+  // !! DEBUG
+
+  const handleResizeTargetBox = (e, direction, ref, delta, position) => {
+    console.log("TARGETBOX RESIZED !!!");
+    console.log("PositionX : " + position.x);
+    console.log("PositionY : " + position.y);
+    // resize işlemi bitince ilgili id'ye sahip targetbox'un genişlik ve yükseklik değerini güncelle
+    updateTargetBoxes(id, ref.style.width, ref.style.height, position.x, position.y);
+  }
 
   return (
     <Rnd
@@ -34,6 +49,7 @@ const TargetBox = ({ id, x, y, width, height, onClick }) => {
       }}
       style={{ ...boxStyle, border: '1px solid black', padding: '10px', backgroundColor: 'white' }}
       onClick={handleClick}
+      onResizeStop={handleResizeTargetBox}
     >
       <div className="box-content">
         <h3>{id}</h3>

@@ -1,10 +1,24 @@
 .image-area {
   position: relative;
   overflow: hidden;
-  border: 1px solid #ccc; /* Opsiyonel: Konteyneri görselleştir */
+  border: 1px solid #ccc;
 }
 
-.image-area-img {
+.image-area img {
   display: block;
   transition: transform 0.2s ease;
+  user-select: none;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.coordinates-display {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.1);
+  color: white;
+  border-radius: 5px;
 }

@@ -1,10 +1,10 @@
-.target-box {
+/* .target-box {
   position: absolute;
-  width: clamp(30px, 5vw, 10vw); /* Kutunun genişliği, min 30px, max 10vw, ortalama 5vw */
-  height: clamp(30px, 5vw, 10vw); /* Kutunun yüksekliği, min 30px, max 10vw, ortalama 5vw */
-  background-color: rgba(255, 0, 0, 0.5); /* Yarı saydam kırmızı renk */
-  border: 2px solid red; /* Kenarları kırmızı renkte */
-  box-sizing: border-box; /* Kenarları kutu boyutuna dahil et */
+  width: clamp(30px, 5vw, 10vw);
+  height: clamp(30px, 5vw, 10vw);
+  background-color: rgba(234, 7, 7, 0.1);
+  border: 2px solid red;
+  box-sizing: border-box;
 }
 
 .rnd-resize-handle {
@@ -37,4 +37,4 @@
   bottom: -5px;
   right: -5px;
   cursor: nwse-resize;
-}
+} */

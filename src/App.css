@@ -1,0 +1,10 @@
+/* src/App.css */
+
+.App {
+  display: flex;
+}
+
+.image-viewer-area {
+  margin-left: 100px; /* Sidebar genişliği kadar boşluk bırak */
+  flex-grow: 1; /* Kalan tüm alanı kapla */
+}

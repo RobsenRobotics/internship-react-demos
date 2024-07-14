@@ -1,0 +1,38 @@
+.image-viewer-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #aea6a6;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.image-viewer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  flex: 1;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+.viewer-section {
+  width: 100%;
+  max-width: 1200px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.image-section {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}

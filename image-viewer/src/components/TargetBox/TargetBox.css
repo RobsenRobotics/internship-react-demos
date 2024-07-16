@@ -1,40 +1,11 @@
-.target-box {
+.box-content {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(255, 0, 0, 0.5);
+  cursor: move;
   position: absolute;
-  width: clamp(30px, 5vw, 10vw); /* Kutunun genişliği, min 30px, max 10vw, ortalama 5vw */
-  height: clamp(30px, 5vw, 10vw); /* Kutunun yüksekliği, min 30px, max 10vw, ortalama 5vw */
-  background-color: rgba(255, 0, 0, 0.5); /* Yarı saydam kırmızı renk */
-  border: 2px solid red; /* Kenarları kırmızı renkte */
-  box-sizing: border-box; /* Kenarları kutu boyutuna dahil et */
-}
-
-.rnd-resize-handle {
-  width: 10px;
-  height: 10px;
-  background-color: blue;
-  position: absolute;
-  z-index: 1;
-}
-
-.rnd-resize-handle-topLeft {
-  top: -5px;
-  left: -5px;
-  cursor: nwse-resize;
-}
-
-.rnd-resize-handle-topRight {
-  top: -5px;
-  right: -5px;
-  cursor: nesw-resize;
-}
-
-.rnd-resize-handle-bottomLeft {
-  bottom: -5px;
-  left: -5px;
-  cursor: nesw-resize;
-}
-
-.rnd-resize-handle-bottomRight {
-  bottom: -5px;
-  right: -5px;
-  cursor: nwse-resize;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }

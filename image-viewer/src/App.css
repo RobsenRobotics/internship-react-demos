@@ -5,6 +5,6 @@
 }
 
 .image-viewer-area {
-  margin-left: 250px; /* Sidebar genişliği kadar boşluk bırak */
+  margin-left: 100px; /* Sidebar genişliği kadar boşluk bırak */
   flex-grow: 1; /* Kalan tüm alanı kapla */
 }

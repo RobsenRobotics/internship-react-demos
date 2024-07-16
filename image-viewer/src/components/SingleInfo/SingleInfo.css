@@ -1,16 +1,14 @@
-/* SingleInfo.css içinde */
 .single-info {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: #e11010;
-  }
-  
-  .info-label {
-    font-weight: bold;
-  }
-  
-  .info-value {
-    margin-top: 5px;
-  }
-  
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #e11010;
+}
+
+.info-label {
+  font-weight: bold;
+}
+
+.info-value {
+  margin-top: 5px;
+}

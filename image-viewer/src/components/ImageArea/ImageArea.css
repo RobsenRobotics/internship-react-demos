@@ -1,10 +1,15 @@
 .image-area {
   position: relative;
-  overflow: hidden;
-  border: 1px solid #ccc; /* Opsiyonel: Konteyneri görselleştir */
+  width: auto;
+  height: auto;
 }
 
-.image-area-img {
-  display: block;
-  transition: transform 0.2s ease;
+.coordinates-display {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
 }

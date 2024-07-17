@@ -8,13 +8,22 @@ const AddButton = () => {
   const { addTargetBox } = useContext(TargetBoxContext);
 
   const handleClick = () => {
-    const id = Date.now(); // Geçici bir ID oluşturabilirsiniz
     const x = Math.random() * (width - 50); // X koordinatı, resim alanı içinde rastgele
     const y = Math.random() * (height - 50); // Y koordinatı, resim alanı içinde rastgele
     const boxWidth = 1; // Kutu genişliği
     const boxHeight = 1; // Kutu yüksekliği
 
-    addTargetBox(id, x, y, boxWidth, boxHeight);
+    // const newTargetBoxX = LocalStorage.getItem('newTargetBoxX');
+    // const newTargetBoxY = LocalStorage.getItem('newTargetBoxY');
+    const newTargetBoxXJson = localStorage.getItem('newTargetBoxX');
+    const newTargetBoxYJson = localStorage.getItem('newTargetBoxY');
+    
+    const newTargetBoxX = newTargetBoxXJson ? JSON.parse(newTargetBoxXJson) : null;
+    const newTargetBoxY = newTargetBoxYJson ? JSON.parse(newTargetBoxYJson) : null;
+
+    console.log("Add Button new target coods : x :" + newTargetBoxX + "  y: " + newTargetBoxY);
+
+    addTargetBox(newTargetBoxX, newTargetBoxY, boxWidth, boxHeight);
   };
 
   return (

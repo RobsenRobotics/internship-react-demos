@@ -7,12 +7,10 @@ export const ChosenTargetBoxProvider = ({ children }) => {
 
   const selectBox = (box) => {
     setSelectedBox(box);
-    console.log("ChosenTargetBoxProvider ID : " + box);
   };
 
   const deselectBox = () => {
     setSelectedBox(null);
-
   };
 
   return (

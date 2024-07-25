@@ -1,10 +1,4 @@
-/* src/App.css */
-
 .App {
-  display: flex;
-}
-
-.image-viewer-area {
-  margin-left: 250px; /* Sidebar genişliği kadar boşluk bırak */
-  flex-grow: 1; /* Kalan tüm alanı kapla */
+  text-align: center;
+  margin-top: 50px;
 }

@@ -1,48 +1,29 @@
-## Components
-> 1. Sidebar Component
+~~Mouse ile üzerinde bulunduğum koordinatlara zoom yapacak.~~
 
-> 2. ImageViewer Area Component
+ ~~Zoom için 16x9 Pixel kalana kadar alana zoom yapabilirim.~~
 
-> 2.1. Add Bar Component 
+~~Mouse'un resmin üzerinde hangi pixel koordinatında olduğunu panelin sağ alt tarafında X ve Y olarak görebilmeliyim. Transparent background ile gösterim yapılacak.~~
 
-> 2.1.1. Add Button Component
+~~Resim taşıma yaparken resim kenarı çerçeve kenarını geçemez. Örn, resmi sağa doğru sürüklüyorsam resmin sol kenarı çerçevenin sol kenarını geçerek merkeze kadar gelemez.~~
 
-> 2.2. Image Area Component
+~~Resmin içerisinde herhangi bir yere çift tıklama yapıldığında zoom ve pan resetlenmeli.~~
 
-> 2.2.1. Target Area Component
+~~Aktif seçili olan ROI rengi yeşil olarak gösterilir. Aktif olmayanlar mavi olarak çizilir.~~
 
-> 2.3. Chosen Target Info Area Component
+~~Tüm şekillerin merkezlerinde bir adet tutma noktası bulunur. Bu noktalardan tutularak taşınabilirler.~~
 
-> 2.3.1. Single Info Component
+Merkez tutma noktasından kenara uzanan bir ok göstergesi bulunur. Bu ok işareti ucundan tutulup sürüklenerek roi'ler merkez noktaları etrafında döndürülebilir.
 
-## Contexts
-> ImageContext
+~~Konulan ROI'ler + ve - olmak üzere bir işaret taşır. + olarak işaretlenen şekiller düz çizgiler, - olarak işaretli olanlar ise kesikli çizgi olarak gösterilir.~~
 
-> TargetBoxContext
+~~Göstericiye yeni resim atandığı zaman/resim değiştirildiğinde pan ve zoom ayarları korunmalı.~~
 
-> ChosenTargetBoxContext
+~~Dikdörtgen, Daire ve Poly olmak üzere 3 tipte ROI şekli ekleyebilmeliyim.~~
 
-## Dependencies
-> react-rnd: "^10.4.11"
+Viewer üzerindeki resim için yapılan zoom ve pan işlemlerinde ROI şekilleri yapılan işlemlere bağlı olarak alanlarını korurlar. Zoom yapılma durumunda tutma noktalarının büyüklükleri değişmez sabit kalır.
 
+~~Image üzerinde tıklanan noktaya ROI yerleştirme~~
 
-* #####  Add Butonu ile görsel üzerinde target alanı oluşacak.  [TAMAMLANDI]
+! KAYMA PROBLEMLERİ 
 
-* #####  Fare tekerleği ile zoom in-out yapılacak. [TAMAMLANDI]
-
-* #####  Left Click ile zoom-in yapılmış görsel üzerinde gezinilecek. [TAMAMLANDI]
-
-* #####  Target alanının köşeleri üzerinden target alanı büyütülebilecek. [TAMAMLANDI]
-
-* #####  Target alanının köşeleri üzerinden target alanı view üzerinde taşınabilecek. [TAMAMLANDI]
-
-* #####  Hangi Target alanı seçildi ise View altında o target alanının özellikleri yazacak. [TAMAMLANDI]
-
-## Issues
-> TargetBox değerleri değiştirilse bile oluşturulduğu andaki değerlere sahip, güncellenmiyor.
-> TargetBox bileşeni ImageArea alanı üzerinde taşınırken ImageArea da birlikte hareket etmiyor.
-
-
-![image](https://github.com/RobsenRobotics/internship-react-demos/assets/72024578/8c07b16e-0d20-4f7f-bc40-59e8d4d9a4e9)
-
-
+poly çok gen sayısı değişebilir

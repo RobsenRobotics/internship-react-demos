@@ -1,18 +1,12 @@
 import React from 'react';
-import ImageViewerArea from './components/ImageViewerArea/ImageViewerArea';
-import Sidebar from './components/Sidebar/Sidebar';
-import { ImageProvider } from './contexts/ImageContext';
+import ImageArea from './components/ImageArea/ImageArea';
 import './App.css';
 
 function App() {
   return (
-    <ImageProvider>
       <div className="App">
-        <Sidebar />
-        <ImageViewerArea />
+        <ImageArea/>
       </div>
-    </ImageProvider>
   );
 }
-
 export default App;
